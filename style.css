@@ -2,6 +2,7 @@
     box-sizing: border-box;
     background-color: #cfc9b6;
 
+
 }
 
 header{
@@ -13,29 +14,35 @@ header{
     padding: 15px;
     top: 0px;
 }
-.menu{
+
+
+
+.vertMenu {
     margin-top: 50px;
+    position: fixed;
+
 }
 
-.menu ul{
+.vertMenu ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.menu li{
+.vertMenu li{
     text-align: center;
     padding: 8px;
     margin-bottom: 7px;
     background-color: #d9d6c9;
 }
 
-.menu li:hover{
+.vertMenu li:hover{
     background-color: #d5d0c1;
 }
 
 .content{
     margin-top: 50px;
+    margin-left: 110px;
     float: left;
 }
 
@@ -48,6 +55,16 @@ header{
     content: "";
     clear: both;
     display: block;
+}
+
+#scroller{
+    position: fixed;
+    bottom: 30px;
+    background: transparent url(up.png) no-repeat ;
+    width: 128px;
+    height: 128px;
+    cursor: pointer;
+    display:none;
 }
 
 .col-1  {width: 8.33%;}
